@@ -27,18 +27,18 @@
     <div class="flex  w-full 2xl:w-[1600px] flex-col justify-center">
         <hr />
         <div class="flex max-lg:flex-col max-2xl:justify-around 2xl:justify-between items-center gap-8 py-10">
-            <h6 class="text-2xl font-bold tracking-wider">Subscribe for Daily Update</h6>
+            <h6 class=" lg:text-2xl font-bold tracking-wider">Subscribe for Daily Update</h6>
             <div class="flex gap-2">
-                <input type="email" placeholder="Enter Email Address" class="border p-2" />
-                <button class="border p-2 bg-[#2563eb] text-white"> Subscribe Now</button>
+                <input type="email" placeholder="Enter Email Address" class="max-md:text-sm border lg:p-2" />
+                <button class="border max-md:text-sm lg:p-2 bg-[#2563eb] text-white"> Subscribe Now</button>
             </div>
         </div>
 
-        <div class="grid 2xl:grid-cols-4 min-md:grid-cols-2 gap-4  w-full   mx-auto ">
+        <div class="grid 2xl:grid-cols-4 min-md:grid-cols-2 gap-4  w-full lg:mx-auto ">
             {#each Footer as section}
                 <div class="flex flex-col max-md:p-2 {section.custom ? 'gap-4' : 'items-center'}">
                     <div>
-                        <h6 class="{section.custom ? 'text-2xl' : ''} font-bold ">{section.title}</h6>
+                        <h6 class="{section.custom ? 'text-2xl' : ''} font-bold max-md:text-lg">{section.title}</h6>
                     </div>
                     <div >
                         {#if section.content}
