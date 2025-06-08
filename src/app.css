@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+
+.angled-button {
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 90% 100%, 0 100%);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: 'Michroma', sans-serif;
+  margin: 4px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  
+}
+
+
+
+.character-border {
+  border-width: 3px;
+  border-style: solid; /* REQUIRED */
+  border-color: #2563eb;
+  padding: 1rem;
+  clip-path: polygon(22% 0, 100% 0, 100% 20%, 100% 78%, 82% 100%, 0 100%, 0% 80%, 0 20%);
+}
